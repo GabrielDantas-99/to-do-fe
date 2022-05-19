@@ -51,3 +51,23 @@ p span {
 .actions button {
     margin: 0 .8rem 1rem .5rem;
 }
+
+.badge {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+
+.finished {
+    transition: 400ms;
+    background-color: rgb(73, 199, 73);
+    color: white;
+}
+
+.finished:hover {
+    color: white;
+    transition: 400ms;
+    background-color: rgba(80, 245, 80, 0.305);
+}

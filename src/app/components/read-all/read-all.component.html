@@ -1,6 +1,17 @@
 <div class="container">
+
+    <div class="badge">
+        <button mat-stroked-button
+         matBadgeColor="accent" 
+         class="finished mat-elevation-z8" 
+         matBadge="{{ finished }}" 
+         color="primary">
+         Tarefas Finalizadas
+        </button>
+    </div>
+
     <!-- Botão Adicionar -->
-    <button class="add-todo mat-elevation-z8" mat-fab color="warn" aria-label="Example icon button with a home icon">
+    <button class="add-todo mat-elevation-z8" mat-fab color="warn">
         <mat-icon>add</mat-icon>
     </button>
 
