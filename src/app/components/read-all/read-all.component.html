@@ -2,13 +2,14 @@
 
     <div class="badge">
         <button mat-stroked-button
+        (click)="finalizados()"
          matBadgeColor="accent" 
          class="finished mat-elevation-z8" 
          matBadge="{{ finished }}" 
          color="primary">
          Tarefas Finalizadas
         </button>
-    </div>
+    </div> 
 
     <!-- Botão Adicionar -->
     <button class="add-todo mat-elevation-z8" mat-fab color="warn">
@@ -26,7 +27,7 @@
 
             <!-- Botões de Ações -->
             <div class="actions">
-                <button mat-mini-fab color="primary">
+                <button (click)="finalizar(item)" mat-mini-fab color="primary">
                     <mat-icon>done</mat-icon>
                 </button>
                 <button mat-mini-fab color="accent">

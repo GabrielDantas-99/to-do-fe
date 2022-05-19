@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReadAllComponent } from './components/read-all/read-all.component';
+import { FinalizadosComponent } from './components/finalizados/finalizados.component';
 
 
 
@@ -22,7 +23,8 @@ import { ReadAllComponent } from './components/read-all/read-all.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ReadAllComponent
+    ReadAllComponent,
+    FinalizadosComponent
   ],
   imports: [
     BrowserModule,

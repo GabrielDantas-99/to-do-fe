@@ -5,19 +5,17 @@
 
 .content {
     width: 100%;
-}
+} 
 
-.add-todo {
-    display: block;
-    margin: 1rem auto;
-    transition: 400ms;
-}
+h1 {
 
-.add-todo:hover {
-    box-shadow: 0px 5px 10px #212121a1;
-    transition: 400ms;
-    width: 4rem;
-    height: 4rem;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin: 2rem auto;
+    background-color: rgb(73, 199, 73, 0.50);
+    width: 30%;
+    padding: .7rem;
 }
 
 mat-card {
@@ -26,30 +24,24 @@ mat-card {
 }
 
 mat-card-header {
-    margin-top: 1.5rem;
+    margin-top: 0;
+    padding-bottom: 1.8rem;
 }
 
 mat-card-subtitle {
     margin-bottom: 0;
 }
 
-p {
+.deadline {
     text-align: end;
     font-weight: 500;
     color: #9c9c9c;
     padding: 1rem .8rem 0 0;
+    margin-bottom: 0;
 }
 
-p span {
+.deadline span {
     color: rgba(212, 210, 210, 0.805);
-}
-
-.actions {
-    text-align: end;
-}
-
-.actions button {
-    margin: 0 .8rem 1rem .5rem;
 }
 
 .badge {
@@ -59,15 +51,15 @@ p span {
     align-items: end;
 }
 
-
-.finished {
+.voltar {
+    padding: .1rem 3rem;
     transition: 400ms;
-    background-color: #479447;
+    background-color: #64c6eb80;
     color: white;
 }
 
-.finished:hover {
+.voltar:hover {
     color: white;
     transition: 400ms;
-    background-color: rgba(80, 245, 80, 0.305);
+    background-color: #64c6eb50;
 }

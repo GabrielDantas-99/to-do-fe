@@ -1,3 +1,4 @@
+import { TOUCH_BUFFER_MS } from '@angular/cdk/a11y/input-modality/input-modality-detector';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -16,6 +17,11 @@ export class TodoService {
 
   findAll(): Observable<Todo[]> {
     return this.http.get<Todo[]>(this.baseUrl);
+  }
+
+  update(todo: Todo): Observable<Todo> {
+    const url = `${this.baseUrl}/${todo.id}`
+    return this.http.put<Todo>(url, todo);
   }
 
   delete(id: any): Observable<void> {
