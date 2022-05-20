@@ -4,6 +4,6 @@ export interface Todo {
     id?: String;
     titulo: String;
     descricao: String;
-    deadLine: Date;
+    deadLine: any;
     finalizada: Boolean;
 }
