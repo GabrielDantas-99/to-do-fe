@@ -20,6 +20,7 @@ import { FinalizadosComponent } from './components/finalizados/finalizados.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReadAllComponent } from './components/read-all/read-all.component';
+import { UpdateComponent } from './components/update/update.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ReadAllComponent } from './components/read-all/read-all.component';
     FooterComponent,
     ReadAllComponent,
     FinalizadosComponent,
-    CreateComponent
+    CreateComponent,
+    UpdateComponent
   ],
   imports: [
     AppRoutingModule,
